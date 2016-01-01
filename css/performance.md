@@ -68,7 +68,7 @@ Float在渲染时计算量比较大，尽量减少使用。
 * 避免通过类似 jQuery animate()-style 改变每帧的样式，使用 CSS 声明动画会得到更好的浏览器优化。
 * 使用 translate 取代 absolute 定位就会得到更好的 fps，动画会更顺滑。
 
-![High Performance Animations](img/cheap-operations.jpg)
+![High Performance Animations](/../img/cheap-operations.jpg)
 
 ####多利用硬件能力，如通过 3D 变形开启 GPU 加速
 一般在 Chrome 中，3D或透视变换（perspective transform）CSS属性和对 opacity 进行 CSS 动画会创建新的图层，在硬件加速渲染通道的优化下，GPU 完成 3D 变形等操作后，将图层进行复合操作（Compesite Layers），从而避免触发浏览器大面积重绘和重排。
